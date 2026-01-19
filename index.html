@@ -3,118 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noqs | Premium Merchandise</title>
+    <title>Noqs | The Official Store</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="logo">NOQS</div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search for products, brands and more">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-        <div class="nav-links">
-            <button class="login-btn">Login</button>
-            <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Cart</button>
+        <div class="logo" onclick="app.showHome()">NOQS <span class="dot">.</span></div>
+        
+        <div class="nav-icons">
+            <div class="cart-icon" onclick="app.showCart()">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </div>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="product-wrapper">
-            
-            <div class="image-gallery">
-                <div class="thumbnail-list">
-                    <img src="1.png" class="thumb active" onclick="changeImage(this)">
-                    <img src="2.png" class="thumb" onclick="changeImage(this)">
-                    <img src="3.png" class="thumb" onclick="changeImage(this)">
-                    <img src="4.png" class="thumb" onclick="changeImage(this)">
-                    <img src="7.png" class="thumb" onclick="changeImage(this)">
-                </div>
-                <div class="main-image-container">
-                    <img src="1.png" id="mainImg" alt="Noqs Product">
-                    <div class="action-buttons">
-                        <button class="btn-cart"><i class="fa-solid fa-cart-shopping"></i> ADD TO CART</button>
-                        <button class="btn-buy"><i class="fa-solid fa-bolt"></i> BUY NOW</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="product-details">
-                <div class="breadcrumb">Home > Clothing > Men's Wear > Noqs Official</div>
-                <h1 class="product-title">Noqs Signature Oversized Tee - Dark Edition</h1>
-                
-                <div class="rating-box">
-                    <span class="rating-badge">4.5 <i class="fa-solid fa-star"></i></span>
-                    <span class="rating-count">2,841 Ratings & 305 Reviews</span>
-                </div>
-
-                <div class="price-section">
-                    <span class="current-price">₹899</span>
-                    <span class="original-price">₹1,999</span>
-                    <span class="discount">55% off</span>
-                </div>
-
-                <div class="size-selector">
-                    <div class="size-header">
-                        <h3>Size</h3>
-                        <span class="size-chart">Size Chart</span>
-                    </div>
-                    <div class="sizes">
-                        <span class="size-option" onclick="selectSize(this)">S</span>
-                        <span class="size-option" onclick="selectSize(this)">M</span>
-                        <span class="size-option selected" onclick="selectSize(this)">L</span>
-                        <span class="size-option" onclick="selectSize(this)">XL</span>
-                        <span class="size-option" onclick="selectSize(this)">XXL</span>
-                    </div>
-                </div>
-
-                <div class="offers">
-                    <h3>Available offers</h3>
-                    <ul>
-                        <li><i class="fa-solid fa-tag"></i> <strong>Bank Offer</strong> 5% Unlimited Cashback on Axis Bank Credit Card</li>
-                        <li><i class="fa-solid fa-tag"></i> <strong>Special Price</strong> Get extra 15% off (price inclusive of cashback/coupon)</li>
-                        <li><i class="fa-solid fa-tag"></i> <strong>Partner Offer</strong> Sign up for Noqs Pay Later to get ₹500 Gift Card</li>
-                    </ul>
-                </div>
-
-                <div class="specifications">
-                    <h3>Product Details</h3>
-                    <table>
-                        <tr>
-                            <td class="spec-key">Type</td>
-                            <td class="spec-val">Round Neck</td>
-                        </tr>
-                        <tr>
-                            <td class="spec-key">Sleeve</td>
-                            <td class="spec-val">Half Sleeve</td>
-                        </tr>
-                        <tr>
-                            <td class="spec-key">Fit</td>
-                            <td class="spec-val">Oversized</td>
-                        </tr>
-                        <tr>
-                            <td class="spec-key">Fabric</td>
-                            <td class="spec-val">100% Cotton (Bio-Washed)</td>
-                        </tr>
-                        <tr>
-                            <td class="spec-key">Sales Package</td>
-                            <td class="spec-val">1 T-Shirt</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="description">
-                    <h3>Description</h3>
-                    <p>Experience the darkness with the official Noqs merchandise. Crafted for creators, developers, and night owls. High-density puff print on premium combed cotton.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <main id="app-container">
+        </main>
 
     <footer>
-        <p>© 2024 Noqs.in | Policies: Returns Policy • Terms of use • Security • Privacy</p>
+        <p>© 2024 Noqs.in | Digital Dreams</p>
     </footer>
 
     <script src="script.js"></script>
